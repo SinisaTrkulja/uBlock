@@ -750,7 +750,7 @@ if ( webext.browserAction instanceof Object ) {
 // anymore, so this ensures it does still exist.
 
 // https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/browserAction#Browser_compatibility
-//   Firefox for Android does no support browser.browserAction.setIcon().
+//   Firefox for Android does not support browser.browserAction.setIcon().
 //   Performance: use ImageData for platforms supporting it.
 
 // https://github.com/uBlockOrigin/uBlock-issues/issues/32
@@ -1399,7 +1399,7 @@ vAPI.scriptletsInjector = (( ) => {
 /******************************************************************************/
 
 // https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/contextMenus#Browser_compatibility
-//   Firefox for Android does no support browser.contextMenus.
+//   Firefox for Android does not support browser.contextMenus.
 
 vAPI.contextMenu = webext.menus && {
     _callback: null,
